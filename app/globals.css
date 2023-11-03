@@ -61,7 +61,7 @@
 
 /* main */
 main {
-  @apply w-[100%] h-[100vh] flex justify-between items-center mx-0 gap-4 p-4;
+  @apply w-[100%] h-[100vh] flex justify-between items-center mx-0 gap-2 px-2 py-4;
 }
 
 /* right-sec */
@@ -75,7 +75,7 @@ main {
 }
 
 .sidebar-subsec {
-  @apply w-[90%] flex flex-col mx-auto;
+  @apply w-[95%] flex flex-col mx-auto;
 }
 
 .logo {
