@@ -71,8 +71,30 @@ main {
 
 /* Sidebar */
 .sidebar {
-  @apply border border-border rounded-lg w-[15%] h-[100%] mx-4 px-3 py-2;
+  @apply border border-border rounded-lg w-[15%] h-[100%] flex flex-col justify-between items-center mx-4 px-3 py-2;
 }
+
+.sidebar-subsec {
+  @apply w-[80%] flex flex-col mx-auto;
+}
+
+.logo {
+  @apply mt-3;
+}
+
+.sidebar-menu-list{
+  @apply justify-between h-[60%]; 
+}
+
+
+.menu-list-item{
+  @apply flex justify-start my-auto items-center text-lg;
+}
+
+.menu-icon {
+  @apply ml-0 mr-5 my-auto; 
+}
+
 /* Navbar */
 .navbar {
   @apply border border-border rounded-lg px-3 py-2 flex justify-between items-center w-[100%];
