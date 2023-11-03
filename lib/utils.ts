@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 export const sidebarMenuList = [
   {
     menu: 'Dashboard',
-    url: '/',
+    url: '/dashboard',
     iconName: 'Home'
   },
   {
@@ -23,6 +23,11 @@ export const sidebarMenuList = [
     iconName: 'ArrowRightLeft'
   },
   {
+    menu: 'Consumers',
+    url: '/consumers',
+    iconName: 'Users'
+  },
+  {
     menu: 'Other Operations',
     url: '/other-ops',
     iconName: 'Layers'
@@ -31,11 +36,6 @@ export const sidebarMenuList = [
     menu: 'Manage Bank Accounts',
     url: '/manage-bank-acc',
     iconName: 'Landmark'
-  },
-  {
-    menu: 'FAQ',
-    url: '/faq',
-    iconName: 'HelpCircle'
   },
   {
     menu: 'Customise Dashboard',
@@ -69,3 +69,4 @@ export const stockAssests = [
     unit: 'gm',
   },
 ]
+

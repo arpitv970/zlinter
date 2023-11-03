@@ -32,7 +32,9 @@ export default function RootLayout({
             <section className='right-sec'>
               <Navbar />
               <Header />
-              {children}
+              <section className='content'>
+                {children}
+              </section>
             </section>
           </main>
         </ThemeProvider>

@@ -1,4 +1,4 @@
-import { Home, Target, ArrowRightLeft, Network, Layers, Landmark, HelpCircle, Settings } from 'lucide-react'
+import { Home, Target, ArrowRightLeft, Network, Layers, Landmark, HelpCircle, Settings, Users } from 'lucide-react'
 import React from 'react'
 
 interface PropsType {
@@ -11,6 +11,7 @@ const IconRender = ({ iconName, size }: PropsType) => {
   if (iconName === 'Home') return <Home size={size} />
   else if (iconName === 'Target') return <Target size={size} />
   else if (iconName === 'ArrowRightLeft') return <ArrowRightLeft size={size} />
+  else if (iconName === 'Users') return <Users size={size} />
   else if (iconName === 'Network') return <Network size={size} />
   else if (iconName === 'Layers') return <Layers size={size} />
   else if (iconName === 'Landmark') return <Landmark size={size} />

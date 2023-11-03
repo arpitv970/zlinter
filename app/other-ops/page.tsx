@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Home = () => {
+const page = () => {
   return (
     <section className='flex justify-center items-center m-auto h-[100%]'>
-      Home Page
+      Other Ops
     </section>
   )
 }
 
-export default Home
+export default page

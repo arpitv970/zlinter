@@ -1,10 +1,13 @@
+'use client'
 import { getMenuIcon, sidebarMenuList } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
 import IconRender from '../utility/IconRender'
 import YourStockCard from '../stocks/YourStockCard'
+import { usePathname } from 'next/navigation'
 
 const Sidebar = () => {
+  const pathName = usePathname();
   return (
     <section className='sidebar'>
       <section className='sidebar-subsec logo'>
@@ -16,7 +19,7 @@ const Sidebar = () => {
         {
           sidebarMenuList.map((item, key) => (
             <Link key={key} href={item.url}>
-              <span className='menu-list-item'>
+              <span className={`menu-list-item ${pathName === item.url ? "active" : ""}`}>
                 <span className='menu-icon'>
                   <IconRender size={30} iconName={getMenuIcon(item.menu, key)} />
                 </span>
