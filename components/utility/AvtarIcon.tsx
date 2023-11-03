@@ -4,7 +4,7 @@ const AvtarIcon = () => {
   return (
     <Avatar>
       <AvatarImage src="https://github.com/arpitv970.png" />
-      <AvatarFallback>CN</AvatarFallback>
+      <AvatarFallback>AV</AvatarFallback>
     </Avatar>
 
   )
