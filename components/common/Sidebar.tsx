@@ -2,12 +2,15 @@ import { getMenuIcon, sidebarMenuList } from '@/lib/utils'
 import Link from 'next/link'
 import React from 'react'
 import IconRender from '../utility/IconRender'
+import YourStockCard from '../stocks/YourStockCard'
 
 const Sidebar = () => {
   return (
     <section className='sidebar'>
       <section className='sidebar-subsec logo'>
-        <img src='/logos/zintlr.svg' alt='zintlr' />
+        <Link href={'/'}>
+          <img src='/logos/zintlr.svg' alt='zintlr' />
+        </Link>
       </section>
       <section className='sidebar-subsec sidebar-menu-list'>
         {
@@ -26,7 +29,7 @@ const Sidebar = () => {
         }
       </section>
       <section className='sidebar-subsec stock-sec'>
-
+        <YourStockCard />
       </section>
     </section>
   )

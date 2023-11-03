@@ -52,3 +52,20 @@ export const getMenuIcon = (menu: string, key: number): string => {
     return ''
   }
 }
+
+export const stockAssests = [
+  {
+    assest: 'Gold',
+    rate: 6.18,
+    errorCorrection: +1.82,
+    weight: 7.3,
+    unit: 'gm',
+  },
+  {
+    assest: 'Silver',
+    rate: 6.18,
+    errorCorrection: -1.82,
+    weight: 7.3,
+    unit: 'gm',
+  },
+]

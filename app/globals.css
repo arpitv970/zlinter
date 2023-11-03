@@ -66,29 +66,33 @@ main {
 
 /* right-sec */
 .right-sec {
-  @apply w-[85%] h-[100%] flex flex-col justify-start items-center pr-5;
+  @apply w-[100%] h-[100%] flex flex-col justify-start items-center pr-5;
 }
 
 /* Sidebar */
 .sidebar {
-  @apply border border-border rounded-lg w-[15%] h-[100%] flex flex-col justify-between items-center mx-4 px-3 py-2;
+  @apply border border-border rounded-lg w-[25%] h-[100%] flex flex-col justify-around items-center mx-4 px-3 py-2;
 }
 
 .sidebar-subsec {
-  @apply w-[80%] flex flex-col mx-auto;
+  @apply w-[90%] flex flex-col mx-auto;
 }
 
 .logo {
-  @apply mt-3;
+  @apply justify-center items-center;
+}
+
+.logo img {
+  @apply h-[3.5rem];
 }
 
 .sidebar-menu-list{
-  @apply justify-between h-[60%]; 
+  @apply justify-between h-[50%] text-lg; 
 }
 
 
 .menu-list-item{
-  @apply flex justify-start my-auto items-center text-lg;
+  @apply flex justify-start my-auto items-center;
 }
 
 .menu-icon {
