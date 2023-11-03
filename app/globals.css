@@ -87,7 +87,7 @@ main {
 }
 
 .sidebar-menu-list{
-  @apply justify-between h-[50%] text-lg gap-2;
+  @apply justify-between h-[100%] text-lg gap-2;
 }
 
 .menu-list-item{
