@@ -71,7 +71,7 @@ main {
 
 /* Sidebar */
 .sidebar {
-  @apply border border-border rounded-lg w-[25%] h-[100%] flex flex-col justify-around items-center px-3 py-2 gap-2;
+  @apply border border-border rounded-lg w-[25%] h-[100%] flex flex-col justify-around items-center p-3 gap-2;
 }
 
 .sidebar-subsec {
