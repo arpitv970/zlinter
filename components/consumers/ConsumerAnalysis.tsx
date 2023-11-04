@@ -1,4 +1,5 @@
 import React from 'react'
+import UnderDev from '../common/UnderDev'
 
 const ConsumerAnalysis = () => {
   return (
