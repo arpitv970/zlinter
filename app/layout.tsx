@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import Sidebar from '@/components/common/Sidebar'
 import Navbar from '@/components/common/Navbar'
 import Header from '@/components/common/Header'
+import { GlobalContextProvider } from '@/contexts/globalContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,16 +28,18 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main>
-            <Sidebar />
-            <section className='right-sec'>
-              <Navbar />
-              <Header />
-              <section className='content'>
-                {children}
+          <GlobalContextProvider>
+            <main>
+              <Sidebar />
+              <section className='right-sec'>
+                <Navbar />
+                <Header />
+                <section className='content'>
+                  {children}
+                </section>
               </section>
-            </section>
-          </main>
+            </main>
+          </GlobalContextProvider>
         </ThemeProvider>
       </body>
 

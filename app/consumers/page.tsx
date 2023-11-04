@@ -1,10 +1,9 @@
+import ConsumerPage from '@/components/consumers/ConsumerPage'
 import React from 'react'
 
 const page = () => {
   return (
-    <section className='flex justify-center items-center m-auto h-[100%]'>
-      Consumers
-    </section>
+    <ConsumerPage />
   )
 }
 

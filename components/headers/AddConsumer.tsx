@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import {
   Card,
@@ -7,9 +8,11 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Button } from '../ui/button'
-import { UserCog, UserPlus } from 'lucide-react'
+import { BarChartBig, UserCog, UserPlus } from 'lucide-react'
+import { useGlobalContext } from '@/contexts'
 
 const AddConsumer = () => {
+  const { consumerSec, setConsumerSec } = useGlobalContext();
   return (
     <div className='add-consumer'>
       <Card>
@@ -22,9 +25,17 @@ const AddConsumer = () => {
             <UserPlus />
             Add Consumer
           </Button>
-          <Button className='gap-2' variant={'outline'}>
-            <UserCog />
-            Manage Consumer
+          <Button onClick={() => { setConsumerSec(consumerSec === 'Overview' ? 'Analysis' : 'Overview') }} className='gap-2' variant={'outline'}>
+            {
+              consumerSec === 'Overview'
+                ? (<BarChartBig />)
+                : (<UserCog />)
+            }
+            {
+              consumerSec === 'Overview'
+                ? ('Analyse Consumer')
+                : ('Manage Consumer')
+            }
           </Button>
         </CardFooter>
       </Card>

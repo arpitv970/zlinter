@@ -125,5 +125,5 @@ main {
 
 /* content */
 .content {
-  @apply border border-border rounded-lg w-[100%] h-[100%];
+  @apply rounded-lg w-[100%] h-[100%];
 }
