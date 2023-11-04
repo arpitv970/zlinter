@@ -127,3 +127,24 @@ main {
 .content {
   @apply rounded-lg w-[100%] h-[100%];
 }
+
+/* Under-dev */
+.under-dev {
+  @apply border border h-[100%] w-[100%] rounded-lg flex flex-col justify-around items-center m-auto;
+}
+
+.under-dev h1 {
+  @apply font-bold text-3xl;
+}
+
+.under-dev p {
+  @apply text-xl flex gap-2;
+}
+
+.under-dev a {
+  @apply flex justify-around items-center font-bold gap-2;
+}
+
+.under-dev section {
+  @apply flex gap-5 justify-around items-center;
+}

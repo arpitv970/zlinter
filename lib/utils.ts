@@ -1,6 +1,7 @@
 import { type ClassValue, clsx } from "clsx"
 import { Home } from "lucide-react"
 import { twMerge } from "tailwind-merge"
+import { Payment } from "./types"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -67,6 +68,27 @@ export const stockAssests = [
     errorCorrection: -1.82,
     weight: 7.3,
     unit: 'gm',
+  },
+]
+
+export const payments: Payment[] = [
+  {
+    id: "728ed52f",
+    amount: 100,
+    status: "pending",
+    email: "m@example.com",
+  },
+  {
+    id: "489e1d42",
+    amount: 125,
+    status: "processing",
+    email: "example@gmail.com",
+  },
+  {
+    id: "489e1d45",
+    amount: 120,
+    status: "processing",
+    email: "arpitv970@gmail.com",
   },
 ]
 
