@@ -137,7 +137,7 @@ main {
 
 /* Header */
 .header {
-  @apply w-[100%] p-0 grid grid-rows-4 md:grid-cols-[2fr_1fr_1fr_1fr] gap-3;
+  @apply w-[100%] p-0 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-3;
 }
 
 /* content */

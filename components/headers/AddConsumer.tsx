@@ -20,7 +20,7 @@ const AddConsumer = () => {
           <CardTitle>Hello Arpit!</CardTitle>
           <CardDescription>You have 134 consumers this week.</CardDescription>
         </CardHeader>
-        <CardFooter className='gap-2'>
+        <CardFooter className='gap-2 flex justify-start items-start flex-col md:flex-row'>
           <Button className='gap-2' variant={'default'}>
             <UserPlus />
             Add Consumer
