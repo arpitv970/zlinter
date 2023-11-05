@@ -6,10 +6,15 @@ import Sidebar from '@/components/common/Sidebar'
 import Navbar from '@/components/common/Navbar'
 import Header from '@/components/common/Header'
 import { GlobalContextProvider } from '@/contexts/globalContext'
-import { SEOData } from '@/lib/seo'
 import HeadSEO from '@/seo/HeadSEO'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const SEOData = {
+  title: 'Zintlr',
+  description: 'From the most detailed B2B database comprising comprehensive company and profile pages.',
+  img: '/public/images/seo-img.png'
+}
 
 export const metadata: Metadata = {
   title: SEOData.title,
