@@ -12,7 +12,7 @@ import { stockAssests } from '@/lib/utils'
 
 const YourStockCard = () => {
   return (
-    <Card>
+    <Card className='your-stocks'>
       <CardHeader>
         <CardTitle>Your Stocks</CardTitle>
       </CardHeader>

@@ -83,15 +83,27 @@ main {
 }
 
 .logo img {
-  @apply h-[3.5rem];
+  @apply h-[4rem];
+}
+
+.logo-desktop {
+  @apply hidden md:block;
+}
+
+.logo-mobile {
+  @apply md:hidden block;
 }
 
 .sidebar-menu-list{
-  @apply justify-between h-[100%] text-lg gap-2;
+  @apply justify-between h-[70%] md:h-[100%] text-lg gap-2;
 }
 
 .menu-list-item{
-  @apply flex justify-start my-auto items-center p-2 rounded-lg;
+  @apply gap-5 flex justify-center md:justify-start my-auto items-center p-2 rounded-lg;
+}
+
+.menu-name {
+  @apply hidden md:block;
 }
 
 .active {
@@ -99,7 +111,12 @@ main {
 }
 
 .menu-icon {
-  @apply ml-0 mr-5 my-auto; 
+  @apply my-auto; 
+}
+
+/* Your Stocks */
+.your-stocks {
+  @apply hidden md:block
 }
 
 /* Navbar */
@@ -107,20 +124,20 @@ main {
   @apply border border-border rounded-lg px-3 py-2 flex justify-between items-center w-[100%];
 }
 .navbar > span {
-  @apply flex items-center justify-between;
+  @apply flex items-center justify-between w-[100%];
 }
 
 .navbar > .searchSpan {
-  @apply w-[30%];
+  @apply hidden md:flex w-[30%];
 }
 
 .navbar > .actionSpan {
-  @apply w-[20%];
+  @apply w-[100%] md:w-[20%];
 }
 
 /* Header */
 .header {
-  @apply w-[100%] p-0 grid grid-cols-[2fr_1fr_1fr_1fr] gap-3;
+  @apply w-[100%] p-0 grid grid-rows-4 md:grid-cols-[2fr_1fr_1fr_1fr] gap-3;
 }
 
 /* content */

@@ -12,7 +12,8 @@ const Sidebar = () => {
     <section className='sidebar'>
       <section className='sidebar-subsec logo'>
         <Link href={'/'}>
-          <img src='/logos/zintlr.svg' alt='zintlr' />
+          <img className='logo-desktop' src='/logos/zintlr.svg' alt='zintlr' />
+          <img className='logo-mobile' src='/logos/z.svg' alt='zintlr' />
         </Link>
       </section>
       <section className='sidebar-subsec sidebar-menu-list'>
