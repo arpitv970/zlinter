@@ -6,12 +6,14 @@ import Sidebar from '@/components/common/Sidebar'
 import Navbar from '@/components/common/Navbar'
 import Header from '@/components/common/Header'
 import { GlobalContextProvider } from '@/contexts/globalContext'
+import { SEOData } from '@/lib/seo'
+import HeadSEO from '@/seo/HeadSEO'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Zintlr',
-  description: 'From the most detailed B2B database comprising comprehensive company and profile pages.',
+  title: SEOData.title,
+  description: SEOData.description,
 }
 
 export default function RootLayout({
@@ -21,6 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <HeadSEO
+        title={SEOData.title}
+        desc={SEOData.description}
+        img={SEOData.img}
+      />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -42,7 +49,6 @@ export default function RootLayout({
           </GlobalContextProvider>
         </ThemeProvider>
       </body>
-
     </html>
   )
 }
